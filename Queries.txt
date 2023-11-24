@@ -1,0 +1,36 @@
+//create database named DBMSPROJECT and run following queries
+
+CREATE TABLE mrainer (
+    trainer_id INT PRIMARY KEY AUTO_INCREMENT,
+    firstname VARCHAR(50) NOT NULL,
+    lastname VARCHAR(50) NOT NULL,
+    phone_number VARCHAR(15),
+    email_id VARCHAR(50) UNIQUE,
+    address VARCHAR(255),
+    gender VARCHAR(10),
+    plan VARCHAR(50),
+    Height DECIMAL(5,2),
+    Weight DECIMAL(5,2),
+    Arms DECIMAL(4,2),
+    Chest DECIMAL(5,2),
+    Waist DECIMAL(5,2),
+    Hips DECIMAL(5,2)
+);
+
+CREATE TABLE member (
+    trainer_id INT PRIMARY KEY AUTO_INCREMENT,
+    firstname VARCHAR(50) NOT NULL,
+    lastname VARCHAR(50) NOT NULL,
+    phone_number VARCHAR(15),
+    email_id VARCHAR(50) UNIQUE,
+    address VARCHAR(255),
+    gender VARCHAR(10),
+    plan VARCHAR(50),
+    Height DECIMAL(5,2),
+    Weight DECIMAL(5,2),
+    Arms DECIMAL(4,2),
+    Chest DECIMAL(5,2),
+    Waist DECIMAL(5,2),
+    Hips DECIMAL(5,2)
+);
+
