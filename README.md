@@ -1,9 +1,5 @@
 # Gym-Management-System-
 *work in progress*
-possible issues:-
-deformed interface due to incompatible browsers,
-rare occasion of update table not working (works about 80% of the time),
-currently working on fixing current issues
 
 This project was created using vs code, and xampp and was run on Google Chrome
 to run project, first follow the step in Query.txt
@@ -13,4 +9,17 @@ or C:\xampp\htdocs
 
 next, start your apache and mysql server using xampp control panel and on your browser, search localhost/project/
 
-run gyn
+run gymlogin.html
+username and password is hardcoded for now
+user: System
+pass: admin
+
+from here, you can select to edit member or trainer forms, or view equipments in the gym and the maintenance date
+Issues with equipment, 
+machines info hardcoded and cant be updated
+updating maintenance date does nothing for now (still developing)
+
+possible issues with member/trainer sections:-
+deformed interface due to incompatible browsers,
+rare occasion of update table not working (works about 80% of the time),
+*currently working on fixing current issues*
