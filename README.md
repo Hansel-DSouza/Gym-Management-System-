@@ -3,7 +3,7 @@
 
 This project was created using vs code, and xampp and was run on Google Chrome
 
-to run project, first follow the step in Query.txt
+to run project, first follow the step in Queries.txt
 
 next, copy files in project and paste it in the htdocs folder located in the xampp folder
 or C:\xampp\htdocs
