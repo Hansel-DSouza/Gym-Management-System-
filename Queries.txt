@@ -1,6 +1,9 @@
-//create database named DBMSPROJECT and run following queries
+download xampp control panel, run Apache and MySql
+then tap admin on Mysql 
+tap on create a new database and name it DBMSPROJECT 
+in this database, go to SQL queries and run following queries 
 
-CREATE TABLE mrainer (
+CREATE TABLE trainer (
     trainer_id INT PRIMARY KEY AUTO_INCREMENT,
     firstname VARCHAR(50) NOT NULL,
     lastname VARCHAR(50) NOT NULL,
