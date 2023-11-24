@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Memberedit.css">
+    <title>Tariners</title>
+</head>
+<body style="background-image: url(gymbackground.jpg); background-size:100%;  background-repeat: no-repeat;">
+   
+     <div class="square">
+        <a href="mainmenu.html" class="backbutton">&times;</a>
+        <div class="container">
+        <!-- <div class="title">What would you like to do?</div> -->
+        <div class="user-box" style="flex-direction: column;" onclick="navigateAdd()">
+            <img src="add.jpg" height="100px" style="border-radius: 50%;">
+            <h3>Add Trainer</h3>
+        </div>
+        <div class="user-box" style="flex-direction: column;" onclick="navigateDelete()">
+            <img src="delete.jpg" height="100px" style="border-radius: 50%;" >
+            <h3>Remove Trainer</h3>
+        </div>
+        <div class="user-box" style="flex-direction: column;" onclick="navigateView()">
+            <img src="Existentialcrisis.jpg" height="100px" style="border-radius: 50%;" >
+            <h3>View Trainer</h3>
+        </div>
+        <div class="user-box" style="flex-direction: column;" onclick="navigateUpdate()">
+            <img src="updat.png" height="100px" style="border-radius: 50%;" >
+            <h3>Update Trainer</h3>
+        </div>
+    </div>
+    </div>
+    <script>
+        function navigateAdd() {
+            window.location.href = 'Trainersignup.html';
+        }
+        function navigateDelete() {
+            window.location.href = 'Trainerdelete.html';
+        }
+        function navigateView(){
+            window.location.href='Trainerview.php';
+        }
+        function navigateUpdate(){
+            window.location.href='TrainerUpdate.html';
+        }
+    </script>
+</body>
+</html>

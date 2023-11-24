@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="gylogin.css">
+</head>
+<body style="background-image: url(gymbackground.jpg); background-size:100%;  background-repeat: no-repeat;">
+    
+    <div class="square">
+        <h1>User Login</h1>
+        username<input type="text" id="uname" required><br><br>
+        password<input type="password" id="passwd" required><br><br>
+        <button class="submit" onclick="login()">Log in</button>
+    </div>
+    <script>
+        function login()
+        {
+            var uname=document.getElementById("uname").value;
+            var passwd=document.getElementById("passwd").value;
+            if(uname=="System" && passwd=="admin")
+            {
+                window.location.href="mainmenu.html";
+            }
+            else{
+                alert("Incorrect username or password.")
+            }
+            
+        }
+    </script>
+</body>
+</html>

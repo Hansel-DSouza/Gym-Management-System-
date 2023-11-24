@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Equipment</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.0/css/pikaday.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.0/pikaday.min.js"></script>
+
+    <link rel="stylesheet" href="equipment.css">
+    
+</head>
+
+<body style="background-image: url(gymbackground.jpg); background-size:100%;  background-repeat: no-repeat;">
+
+    <header>
+        <a href="javascript:history.back()" class="go-back-link">&#10006;</a>
+        <h1>Gym Equipment</h1>
+    </header>
+
+    <main>
+
+        <div class="equipment-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYdn7FcSdowPdzU_Qdd4uRALSSboF9Tj6jqw&usqp=CAU"
+                alt="Dumbbells" class="equipment-image">
+            <div class="equipment-details">
+                <h2>Dumbbells</h2>
+                <div class="detail-label">Model No:</div>
+                <div class="detail-value">DB-456</div>
+                <div class="quantity-controls">
+                    <div class="quantity-box">
+                        <div class="quantity-label">Qty:</div>
+                        <div class="quantity-value" id="quantityDumbbells">15</div>
+                    </div>
+                    <button class="quantity-btn" onclick="decrementQuantity(this, 'quantityDumbbells')">-</button>
+                    <button class="quantity-btn" onclick="incrementQuantity(this, 'quantityDumbbells')">+</button>
+                </div>
+                <div class="detail-label">Maintenance:</div>
+                <input type="text" id="maintenanceDateDumbbells" placeholder="Select maintenance date">
+                <button id="submitBtn" onclick="submitForm('maintenanceDateDumbbells')">Submit</button>
+                <p class="bold">Free weights used for strength training. Dumbbells come in various weights and are
+                    versatile for a wide range
+                    of exercises.</p>
+            </div>
+        </div>
+
+
+        <div class="equipment-card">
+            <img src="https://media.istockphoto.com/id/1092171750/photo/barbell.jpg?s=612x612&w=0&k=20&c=IoZ4qADA7er7nrsHSEeK9BFM-P7jS7rCY5fbf-xoO6I="
+                alt="Barbell" class="equipment-image">
+            <div class="equipment-details">
+                <h2>Barbell</h2>
+                <div class="detail-label">Model No:</div>
+                <div class="detail-value">BB-123</div>
+                <div class="quantity-controls">
+                    <div class="quantity-box">
+                        <div class="quantity-label">Qty:</div>
+                        <div class="quantity-value" id="quantityBarbell">10</div>
+                    </div>
+                    <button class="quantity-btn" onclick="decrementQuantity(this, 'quantityBarbell')">-</button>
+                    <button class="quantity-btn" onclick="incrementQuantity(this, 'quantityBarbell')">+</button>
+                </div>
+                <div class="detail-label">Maintenance:</div>
+                <input type="text" id="maintenanceDateBarbell" placeholder="Select maintenance date">
+                <button id="submitBtn" onclick="submitForm('maintenanceDateBarbell')">Submit</button>
+                <p class="bold">A straight bar used for weightlifting. It is commonly used for exercises such as bench
+                    press, squats,
+                    and deadlifts.</p>
+            </div>
+        </div>
+
+        <div class="equipment-card">
+            <img src="https://media.istockphoto.com/id/686108288/photo/bench-press-machine.jpg?s=612x612&w=0&k=20&c=znIsf84t1TrfO3_2kZenD20Zz8-bzokZfD6FeQ_05kY="
+                alt="Chest Press" class="equipment-image">
+            <div class="equipment-details">
+                <h2>Chest Press</h2>
+                <div class="detail-label">Model No:</div>
+                <div class="detail-value">CP-456</div>
+                <div class="quantity-controls">
+                    <div class="quantity-box">
+                        <div class="quantity-label">Qty:</div>
+                        <div class="quantity-value" id="quantityChestPress">5</div>
+                    </div>
+                    <button class="quantity-btn" onclick="decrementQuantity(this, 'quantityChestPress')">-</button>
+                    <button class="quantity-btn" onclick="incrementQuantity(this, 'quantityChestPress')">+</button>
+                </div>
+                <div class="detail-label">Maintenance:</div>
+                <input type="text" id="maintenanceDateChestPress" placeholder="Select maintenance date">
+                <button id="submitBtn" onclick="submitForm('maintenanceDateChestPress')">Submit</button>
+                <p class="bold">A machine for working out the chest muscles. It involves pressing weights away from the
+                    body.</p>
+            </div>
+        </div>
+
+        <div class="equipment-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrTYhD3Nz4g91ViyYiJBz0mspLJocthztgdA&usqp=CAU"
+                alt="Lat Pulldown" class="equipment-image">
+            <div class="equipment-details">
+                <h2>Lat Pulldown</h2>
+                <div class="detail-label">Model No:</div>
+                <div class="detail-value">LP-789</div>
+                <div class="quantity-controls">
+                    <div class="quantity-box">
+                        <div class="quantity-label">Qty:</div>
+                        <div class="quantity-value" id="quantityLatPulldown">8</div>
+                    </div>
+                    <button class="quantity-btn" onclick="decrementQuantity(this, 'quantityLatPulldown')">-</button>
+                    <button class="quantity-btn" onclick="incrementQuantity(this, 'quantityLatPulldown')">+</button>
+                </div>
+                <div class="detail-label">Maintenance:</div>
+                <input type="text" id="maintenanceDateLatPulldown" placeholder="Select maintenance date">
+                <button id="submitBtn" onclick="submitForm('maintenanceDateLatPulldown')">Submit</button>
+                <p class="bold">A machine for strengthening the muscles of the back, particularly the latissimus dorsi.
+                </p>
+            </div>
+        </div>
+
+        <div class="equipment-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoBUZVNRya3IAEdH3V7S18lEYkFbzpJmklOg&usqp=CAU"
+                alt="Leg Extension" class="equipment-image">
+            <div class="equipment-details">
+                <h2>Leg Extension</h2>
+                <div class="detail-label">Model No:</div>
+                <div class="detail-value">LE-101</div>
+                <div class="quantity-controls">
+                    <div class="quantity-box">
+                        <div class="quantity-label">Qty:</div>
+                        <div class="quantity-value" id="quantityLegExtension">7</div>
+                    </div>
+                    <button class="quantity-btn" onclick="decrementQuantity(this, 'quantityLegExtension')">-</button>
+                    <button class="quantity-btn" onclick="incrementQuantity(this, 'quantityLegExtension')">+</button>
+                </div>
+                <div class="detail-label">Maintenance:</div>
+                <input type="text" id="maintenanceDateLegExtension" placeholder="Select maintenance date">
+                <button id="submitBtn" onclick="submitForm('maintenanceDateLegExtension')">Submit</button>
+                <p class="bold">A machine designed to strengthen the quadriceps muscles in the legs.</p>
+            </div>
+        </div>
+
+        <div class="equipment-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiLlyxJSQ5Fl4QG8_Xuxxt7e3XhBf-hftMAA&usqp=CAU"
+                alt="Leg Press" class="equipment-image">
+            <div class="equipment-details">
+                <h2>Leg Press</h2>
+                <div class="detail-label">Model No:</div>
+                <div class="detail-value">LP-202</div>
+                <div class="quantity-controls">
+                    <div class="quantity-box">
+                        <div class="quantity-label">Qty:</div>
+                        <div class="quantity-value" id="quantityLegPress">6</div>
+                    </div>
+                    <button class="quantity-btn" onclick="decrementQuantity(this, 'quantityLegPress')">-</button>
+                    <button class="quantity-btn" onclick="incrementQuantity(this, 'quantityLegPress')">+</button>
+                </div>
+                <div class="detail-label">Maintenance:</div>
+                <input type="text" id="maintenanceDateLegPress" placeholder="Select maintenance date">
+                <button id="submitBtnLegPress" onclick="submitForm('maintenanceDateLegPress')">Submit</button>
+                <p class="bold"> machine for strengthening the muscles of the legs, particularly the quadriceps and
+                    hamstrings.</p>
+            </div>
+        </div>
+
+        <div class="equipment-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFDObTKETUM0sF2ut-Lx61XDdNpWZaL-MMMw&usqp=CAU"
+                alt="Cycle" class="equipment-image">
+            <div class="equipment-details">
+                <h2>Cycle</h2>
+                <div class="detail-label">Model No:</div>
+                <div class="detail-value">CY-303</div>
+                <div class="quantity-controls">
+                    <div class="quantity-box">
+                        <div class="quantity-label">Qty:</div>
+                        <div class="quantity-value" id="quantityCycle">12</div>
+                    </div>
+                    <button class="quantity-btn" onclick="decrementQuantity(this, 'quantityCycle')">-</button>
+                    <button class="quantity-btn" onclick="incrementQuantity(this, 'quantityCycle')">+</button>
+                </div>
+                <div class="detail-label">Maintenance:</div>
+                <input type="text" id="maintenanceDateCycle" placeholder="Select maintenance date">
+                <button id="submitBtn" onclick="submitForm('maintenanceDateCycle')">Submit</button>
+                <p class="bold">An exercise machine resembling a bicycle, used for indoor cycling as a form of exercise.
+                </p>
+            </div>
+        </div>
+
+        <div class="equipment-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjCiPsmX_luvxb9GzE77_m5KIP5hC6M6hNvw&usqp=CAU"
+                alt="Cable Machine" class="equipment-image">
+            <div class="equipment-details">
+                <h2>Cable Machine</h2>
+                <div class="detail-label">Model No:</div>
+                <div class="detail-value">CM-404</div>
+                <div class="quantity-controls">
+                    <div class="quantity-box">
+                        <div class="quantity-label">Qty:</div>
+                        <div class="quantity-value" id="quantityCableMachine">8</div>
+                    </div>
+                    <button class="quantity-btn" onclick="decrementQuantity(this, 'quantityCableMachine')">-</button>
+                    <button class="quantity-btn" onclick="incrementQuantity(this, 'quantityCableMachine')">+</button>
+                </div>
+                <div class="detail-label">Maintenance:</div>
+                <input type="text" id="maintenanceDateCableMachine" placeholder="Select maintenance date">
+                <button id="submitBtn" onclick="submitForm('maintenanceDateCableMachine')">Submit</button>
+                <p class="bold">A versatile exercise machine that uses a system of cables and pulleys to enable
+                    different
+                    exercises.</p>
+            </div>
+        </div>
+
+        <div class="equipment-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShHaW-hTh_6AAMUeItUaA_YcGygerOBBy3Pw&usqp=CAU"
+                alt="Pec Fly" class="equipment-image">
+            <div class="equipment-details">
+                <h2>Pec Fly</h2>
+                <div class="detail-label">Model No:</div>
+                <div class="detail-value">PF-505</div>
+                <div class="quantity-controls">
+                    <div class="quantity-box">
+                        <div class="quantity-label">Qty:</div>
+                        <div class="quantity-value" id="quantityPecFly">6</div>
+                    </div>
+                    <button class="quantity-btn" onclick="decrementQuantity(this, 'quantityPecFly')">-</button>
+                    <button class="quantity-btn" onclick="incrementQuantity(this, 'quantityPecFly')">+</button>
+                </div>
+                <div class="detail-label">Maintenance:</div>
+                <input type="text" id="maintenanceDatePecFly" placeholder="Select maintenance date">
+                <button id="submitBtn" onclick="submitForm('maintenanceDatePecFly')">Submit</button>
+                <p class="bold">A machine designed to work the pectoral muscles through a fly-type motion.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        function incrementQuantity(btn, quantityId) {
+            const quantityElement = btn.parentElement.querySelector(`#${quantityId}`);
+            quantityElement.textContent = parseInt(quantityElement.textContent) + 1;
+        }
+
+        function decrementQuantity(btn, quantityId) {
+            const quantityElement = btn.parentElement.querySelector(`#${quantityId}`);
+            const currentQuantity = parseInt(quantityElement.textContent);
+            if (currentQuantity > 0) {
+                quantityElement.textContent = currentQuantity - 1;
+            }
+        }
+
+        function submitForm(maintenanceDateId) {
+            const maintenanceDateInput = document.getElementById(maintenanceDateId).value;
+            alert(`Maintenance date updated to: ${maintenanceDateInput}`);
+            // Add your actual update logic here
+        }
+
+        const maintenanceDateInputDumbbells = document.getElementById('maintenanceDateDumbbells');
+        const pickerDumbbells = new Pikaday({
+            field: maintenanceDateInputDumbbells,
+            format: 'YYYY-MM-DD',
+            yearRange: [moment().year(), moment().year() + 10]
+        });
+
+
+
+        const maintenanceDateInputBarbell = document.getElementById('maintenanceDateBarbell');
+        const pickerBarbell = new Pikaday({
+            field: maintenanceDateInputBarbell,
+            format: 'YYYY-MM-DD',
+            yearRange: [moment().year(), moment().year() + 10]
+        });
+
+        const maintenanceDateInputChestPress = document.getElementById('maintenanceDateChestPress');
+        const pickerChestPress = new Pikaday({
+            field: maintenanceDateInputChestPress,
+            format: 'YYYY-MM-DD',
+            yearRange: [moment().year(), moment().year() + 10]
+        });
+
+        const maintenanceDateInputLatPulldown = document.getElementById('maintenanceDateLatPulldown');
+        const pickerLatPulldown = new Pikaday({
+            field: maintenanceDateInputLatPulldown,
+            format: 'YYYY-MM-DD',
+            yearRange: [moment().year(), moment().year() + 10]
+        });
+
+        const maintenanceDateInputLegExtension = document.getElementById('maintenanceDateLegExtension');
+        const pickerLegExtension = new Pikaday({
+            field: maintenanceDateInputLegExtension,
+            format: 'YYYY-MM-DD',
+            yearRange: [moment().year(), moment().year() + 10]
+        });
+
+        const maintenanceDateInputLegPress = document.getElementById('maintenanceDateLegPress');
+        const pickerLegPress = new Pikaday({
+            field: maintenanceDateInputLegPress,
+            format: 'YYYY-MM-DD',
+            yearRange: [moment().year(), moment().year() + 10]
+        });
+
+        const maintenanceDateInputCycle = document.getElementById('maintenanceDateCycle');
+        const pickerCycle = new Pikaday({
+            field: maintenanceDateInputCycle,
+            format: 'YYYY-MM-DD',
+            yearRange: [moment().year(), moment().year() + 10]
+        });
+
+        const maintenanceDateInputCableMachine = document.getElementById('maintenanceDateCableMachine');
+        const pickerCableMachine = new Pikaday({
+            field: maintenanceDateInputCableMachine,
+            format: 'YYYY-MM-DD',
+            yearRange: [moment().year(), moment().year() + 10]
+        });
+
+        const maintenanceDateInputPecFly = document.getElementById('maintenanceDatePecFly');
+        const pickerPecFly = new Pikaday({
+            field: maintenanceDateInputPecFly,
+            format: 'YYYY-MM-DD',
+            yearRange: [moment().year(), moment().year() + 10]
+        });
+    </script>
+</body>
+
+</html>

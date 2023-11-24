@@ -1,0 +1,164 @@
+ body {
+    font-family: 'Times New Roman', Times, serif;
+     margin: 0;
+     padding: 0;
+     background-attachment: fixed;
+     background-image: url('');
+     background-size: cover;
+     background-position: center;
+     background-repeat: repeat;
+     background-color: #f8f8f8;
+     
+ }
+
+ header {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+     color: #fff;
+     text-align: center;
+     padding: 1em;
+     position: relative;
+ }
+
+ .bold {
+     font-weight: bolder;
+     color: white;
+ }
+
+ .go-back-link {
+     position: absolute;
+     top: 35px;
+     right: 50px;
+     text-decoration: none;
+     color: #fff;
+     font-size: 20px;
+     line-height: 1;
+     transform: scale(1);
+ }
+
+ main {
+     max-width: 800px;
+     margin: 20px auto;
+ }
+
+ .equipment-card {
+     display: flex;
+     border: 1px solid #ddd;
+     border-radius: 10px;
+     margin-bottom: 20px;
+     overflow: hidden;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     transition: transform 0.2s;
+     background-color: rgba(0, 0, 0, 0.5);
+     backdrop-filter: blur(2px);
+     padding: 20px;
+ }
+
+ .equipment-card:hover {
+     transform: scale(1.02);
+ }
+
+ .equipment-image {
+     width: 150px;
+     height: auto;
+     border-top-left-radius: 10px;
+     border-bottom-left-radius: 10px;
+     border-top-right-radius: 10px;
+     border-bottom-right-radius: 10px;
+ }
+
+ .equipment-details {
+     flex: 1;
+     padding: 10px;
+     display: flex;
+     flex-direction: column;
+ }
+
+ h2 {
+     color: #ffffff;
+     margin-bottom: 5px;
+     font-size: 18px;
+ }
+
+ .detail-label {
+     font-weight: bold;
+     color: #ffffff;
+     margin-bottom: 3px;
+     font-size: 14px;
+ }
+
+ .detail-value {
+    color: #ffffff;
+     margin-bottom: 10px;
+     font-size: 14px;
+ }
+
+ .quantity-controls {
+     display: flex;
+     align-items: center;
+     color: #ffffff;
+ }
+
+ .quantity-box {
+     display: flex;
+     align-items: center;
+     border: 1px solid #ddd;
+     border-radius: 4px;
+     overflow: hidden;
+     margin-right: 5px;
+ }
+
+ .quantity-label {
+     padding: 5px;
+     font-size: 12px;
+     color: #070707;
+     background-color: #ddd;
+     border-right: 1px solid #bbb;
+ }
+
+ .quantity-value {
+     padding: 5px;
+     font-size: 14px;
+ }
+
+ .quantity-btn {
+     padding: 5px 8px;
+     font-size: 12px;
+     cursor: pointer;
+     background-color: #ddd;
+     border: none;
+     border-radius: 4px;
+ }
+
+ .maintenance-label {
+     font-weight: bold;
+     margin-bottom: 3px;
+     font-size: 14px;
+ }
+
+ #maintenanceDate {
+     width: 100%;
+     padding: 8px;
+     font-size: 14px;
+     border: 1px solid #ddd;
+     border-radius: 4px;
+     box-sizing: border-box;
+ }
+
+ #submitBtn {
+     padding: 8px;
+     width: 80px;
+     /* Adjusted width */
+     font-size: 14px;
+     background-color: #878787;
+     color: #fff;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+ }
+
+ p {
+     color: #666;
+     font-size: 14px;
+     margin: 0;
+ }

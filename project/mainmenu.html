@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="mainmenu.css">
+</head>
+<body>
+    <body style="background-image: url(gymbackground.jpg); background-size:100%;  background-repeat: no-repeat;">
+    <div class="square">
+        <div class="user-box" style="flex-direction: column;" onclick="navigateMember()">
+            <img src="member.png" height="100px" style="border-radius: 50%;">
+            <h3>Member</h3>
+        </div>
+        <div class="user-box" style="flex-direction: column;" onclick="navigateTrainer()">
+            <img src="trainer.jpg" height="100px" style="border-radius: 50%;">
+            <h3>Trainer</h3>
+        </div>
+        <div class="user-box" style="flex-direction: column;" onclick="navigateEquip()">
+            <img src="equip.jpg" height="100px" style="border-radius: 50%;">
+            <H3>Equipment</H3>
+        </div>
+    </div>
+    <script>
+        function navigateMember() {
+            window.location.href = 'Memberedit.html';
+        }
+        function navigateTrainer() {
+            window.location.href = 'Traineredit.html';
+        }
+        function navigateEquip(){
+            window.location.href='equipment2.html';
+        }
+    </script>
+</body>
+</html>
