@@ -25,4 +25,6 @@ updating maintenance date does nothing for now (still developing)
 possible issues with member/trainer sections:-
 deformed interface due to incompatible browsers,
 rare occasion of update table not working (works about 80% of the time),
+random images given weird names for entertainment purposes.
+
 *currently working on fixing current issues*
