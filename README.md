@@ -2,6 +2,7 @@
 *work in progress*
 
 This project was created using vs code, and xampp and was run on Google Chrome
+most icons were made using autodesk sketchbook and MS paint
 
 to run project, first follow the step in Queries.txt
 
